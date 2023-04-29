@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ailen Elizabeth Morra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <nav class="main_nav">
+            <img class="logo" src="images/ame.svg" alt="logo"><a href=""></a>
+            <ul class="ListaNavegacion">
+                <li class="opciones"><a href="#Inicio">Inicio</a></li>
+                <li class="opciones"><a href="#Acerca">Acerca de mi</a></li>
+                <li class="opciones"><a href="#Portafolio">Mi Portafolio</a></li>
+                <li class="opciones"><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="secciones">
+            <h1>¡Hola!</h1>
+            <div>
+                <p>Soy una diseñadora gráfica apasionada por la creatividad y el arte visual. Me encanta crear diseños
+                    únicos
+                    y personalizados que conecten con las emociones y necesidades de mi público.</p>
+                <p>¿Estás buscando un diseño impactante y profesional que represente la identidad de tu marca o
+                    proyecto?
+                    ¡Estás en el lugar correcto! Ofrezco servicios de diseño gráfico personalizados para ayudarte a
+                    destacar
+                    en el mercado y comunicar tu mensaje de manera efectiva.</p>
+            </div>
+        </div>
+        <div class="secciones">
+            <img id="Ailen" src="images/ailen.jpeg" alt="Ailen">
+            <div class="wrappeMe">
+                <h1 id="Acerca">Acerca de mi</h1>
+                <p>Mi nombre es Ailén E. Morra, tengo 27 años y soy comunicadora visual, egresada de la Universidad de
+                    Córdoba, Argentina.
+                    En mis anteriores trabajos tuve la oportunidad de obtener experiencia laboral dentro de distintos
+                    ámbitos como diseño de Branding, piezas gráficas,
+                </p>
+            </div>
+        </div>
+        <div class="secciones">
+            <h1 id="Portafolio">Portafolio</h1>
+            <div class="wrapcarrusel">
+                <nav class="lilnav">
+                    <a href="#imagen-1">
+                        <img src="images/Imagen1.png" alt="" class="lilnavthumb">
+                    </a>
+                    <a href="#imagen-2">
+                        <img src="images/Imagen2.png" alt="" class="lilnavthumb">
+                    </a>
+                    <a href="#imagen-3">
+                        <img src="images/Imagen3.png" alt="" class="lilnavthumb">
+                    </a>
+                    <a href="#imagen-4">
+                        <img src="images/Imagen4.png" alt="" class="lilnavthumb">
+                    </a>
+                </nav>
+                <div class="carrusel">
+                    <img src="images/Imagen1.png" alt="" class="image_gal" id="imagen-1">
+                    <img src="images/Imagen2.png" alt="" class="image_gal" id="imagen-2">
+                    <img src="images/Imagen3.png" alt="" class="image_gal" id="imagen-3">
+                    <img src="images/Imagen4.png" alt="" class="image_gal" id="imagen-4">
+                </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam obcaecati velit quis sed recusandae quam
+                enim ratione ex sunt, voluptas ea sequi, aut labore veniam nulla molestias dignissimos deleniti?
+                Exercitationem.</p>
+            <div class="herramientas">
+                <img src="images/photoshop.svg" alt="photoshop">
+                <img src="images/illustrator.svg" alt="illustrator">
+                <img src="images/lightroom.svg" alt="lightroom">
+                <img src="images/premiere.svg" alt="premiere">
+            </div>
+
+        </div>
+        <div class="secciones">
+            <div class="cont">
+                <h1 id="Contacto">Contacto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam obcaecati velit quis sed recusandae
+                    quam
+                    enim ratione ex sunt, voluptas ea sequi, aut labore veniam nulla molestias dignissimos deleniti?
+                    Exercitationem.</p>
+            </div>
+            <div class="cont">
+                <div class="contaform">
+                    <form>
+                        <label for="fname"></label>
+                        <input type="text" id="nombre" placeholder="Nombres">
+                        <input type="text" id="apellido" placeholder="Apellidos">
+                        <input type="number" id="telefono" placeholder="Telefono">
+                        <input type="email" id="correo" placeholder="Correo">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="redes">
+            <ul class="wrapper">
+                <li class="socialMedia"><a href="https://www.instagram.com/ailen.mo.r/"><img src="images/insta.svg"
+                            alt="Instagram"></a></li>
+                <li class="socialMedia"><a
+                        href="https://www.linkedin.com/in/ail%C3%A9n-elizabeth-m-1103a51a9/?originalSubdomain=ar"><img
+                            src="images/linkedin.svg" alt=""></a></li>
+                <li class="socialMedia"><a href="mailto:ailen317@gmail.com"><img src="images/gmail.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <div class="backToTop">
+        <a href="#" class="home">
+            <span class="textBackTop">¡Volver!</span>
+        </a>
+    </div>
+    <footer>
+        <h5 id="copyright"></h5>
+    </footer>
+</body>
+
+<script defer>
+    /* Permite la rotacion del Volver al inicio con la rueda del mouse */
+    const divToRotate = document.querySelector(".backToTop");
+    let rotation = 0;
+
+  /*   window.addEventListener("wheel", (event) => {
+        rotation += event.deltaY;
+        divToRotate.style.transform = `rotate(${rotation}deg)`;
+    });
+ */
+
+ /* Esta es una versión más costosa en "Performance" pero funciona con todo
+ tactil y mouse */
+    window.addEventListener('scroll', function (event) {
+        rotation += window.scrollY;
+        divToRotate.style.transform = `rotate(${rotation}deg)`;
+        console.log(rotation);
+    });
+
+
+    /* Esto cambia la fecha del copyright a la del año actual*/
+    const fecha = new Date();
+    const añoActual = fecha.getFullYear();
+    const h4Footer = document.getElementById("copyright").textContent = "Copyright Ailen Elizabeth Morra" + " " + añoActual;
+
+
+</script>
+
+</html>
