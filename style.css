@@ -154,9 +154,7 @@ li:hover {
 }
 
 .wrapcarrusel {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-gap: 5rem;
+    display: flex;
     overflow: hidden;
     height: 100vh;
 }
@@ -218,12 +216,33 @@ input {
 
 @media (max-width: 900px) {
 
-    img {
-        max-width: 100%;
-        /* Hace que las imagenes siempre se vean no overflow */
+    .lilnav a {
+        margin: 0;
+    }
+
+    .lilnav {
+        margin-bottom: 0.6rem;
+        display: flex;
+        gap: 0.3rem;
+        overflow: auto;
+    }
+
+    .wrapcarrusel {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 2rem;
+    }
+
+    .main_nav {}
+
+    .secciones {
+        margin: 0;
     }
 
     .secciones:nth-of-type(even) {
+        flex-direction: column;
         max-width: 70vw;
         margin: 0 auto;
         margin-bottom: 1rem;
