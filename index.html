@@ -91,9 +91,9 @@
                 <div class="contaform">
                     <form>
                         <label for="fname"></label>
-                        <input type="text" id="nombre" placeholder="Nombres">
-                        <input type="text" id="apellido" placeholder="Apellidos">
-                        <input type="number" id="telefono" placeholder="Telefono">
+                        <input type="text" id="nombre" placeholder="Nombres" maxlength="30">
+                        <input type="text" id="apellido" placeholder="Apellidos" maxlength="30">
+                        <input type="number" id="telefono" placeholder="Telefono" min="9" title="Por favor, introducir un número de teléfono en el formato 666-555-444" pattern="^(?:0|\(?\+34\)?\s?|0034\s?)[1-79](?:[\.\-\s]?\d\d){4}$">
                         <input type="email" id="correo" placeholder="Correo">
                         <input type="submit" value="Enviar">
                     </form>
